@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.4.1'
 
 gem 'rake'
 gem 'sinatra'
@@ -10,6 +10,7 @@ gem 'dm-postgres-adapter'
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'rspec'
   gem 'rubocop'
   gem 'simplecov', require: false
