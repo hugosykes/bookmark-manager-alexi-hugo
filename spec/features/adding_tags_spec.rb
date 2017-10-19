@@ -7,7 +7,8 @@ feature 'Tags' do
     fill_in 'title', with: 'Googlieasdf'
     fill_in 'tags', with: 'search engine'
     click_button 'Create link'
+    link = Link.first
 
-    expect(Link.first(title: 'Googlieasdf').tags).to include 'search engine'
+    expect(link.tags.map(&:name)).to include('search engine')
   end
 end
