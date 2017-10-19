@@ -4,9 +4,9 @@ ruby '2.4.2'
 
 gem 'rake'
 gem 'sinatra'
-gem 'dm-migrations'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
+gem 'launchy'
 
 group :test do
   gem 'capybara'
